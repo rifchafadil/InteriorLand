@@ -1,0 +1,266 @@
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+	padding: 10px 0 10px 0;
+	transform: scaleY(0);
+	-webkit-transform: scaleY(0);
+	-moz-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	-o-transform: scaleY(0);
+	transform-origin: top;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.navbar.color-active {
+	background-color: #212529;
+	transform: scaleY(1);
+	-webkit-transform: scaleY(1);
+	-moz-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	-o-transform: scaleY(1);
+	padding: 15px 0 15px 0;
+}
+
+.hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/hero/interior.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.hero div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* margin: auto; */
+	height: 100vh;
+	padding: auto 0px;
+}
+
+.hero h1 {
+	font-size: 58px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	text-align: left;
+	width: 70%;
+}
+
+.hero h1 span {
+	color: orange;
+}
+
+.hero p {
+	width: 70%;
+}
+
+.gallery h1 {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.ruang img {
+	/* height: 220px; */
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: #f9f5e8 5px solid;
+	box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.25);
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.ruang img:hover {
+	transform: translateY(-5px);
+	-webkit-transform: translateY(-5px);
+	-moz-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
+	border: salmon 5px solid;
+}
+
+.gallery h5 {
+	text-align: center;
+	margin-top: 7px;
+}
+
+.services {
+	padding-top: 100px;
+}
+
+.services .row:nth-child(1) h1 {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.faq .row:nth-child(1) h2 {
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+}
+/* .card {
+	display: flex;
+	align-items: flex-end;
+	text-align: center;
+} */
+
+/* .ruang h1 {
+	font-size: 28px;
+	font-weight: bold;
+	color: salmon;
+	text-align: center;
+} */
+
+.faq {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.faq .accordion {
+	--bs-accordion-bg: #f1faee;
+}
+
+.faq .accordion .accordion-item .accordion-header {
+	line-height: 2;
+}
+
+.faq .accordion .accordion-button:focus {
+	box-shadow: none;
+}
+
+.footer {
+	background-color: #212529;
+}
+
+@media screen and (max-width: 992px) {
+	.services {
+		padding-top: 70px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.hero h1 {
+		font-size: 36px;
+		width: 100%;
+	}
+
+	.hero p {
+		width: 90%;
+		font-size: 14px;
+		text-align: justify;
+	}
+
+	.gallery h1 {
+		font-size: 20px;
+	}
+
+	.gallery p {
+		font-size: 14px;
+	}
+
+	.gallery h5 {
+		font-size: 15px;
+	}
+
+	.services .row:nth-child(1) h1 {
+		font-size: 20px;
+	}
+
+	.services .row:nth-child(1) p {
+		font-size: 14px;
+	}
+
+	.services .row:nth-child(2) h5 {
+		font-size: 15px;
+	}
+
+	.services .row:nth-child(2) p {
+		font-size: 12px;
+	}
+
+	.faq .row:nth-child(1) h2 {
+		font-size: 19px;
+	}
+
+	.faq .row:nth-child(1) p {
+		font-size: 14px;
+	}
+
+	.footer .row:nth-child(1) h3 {
+		font-size: 22px;
+	}
+
+	.footer .row:nth-child(2) p {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	
+}
+
+@media screen and (max-width: 418px) {
+	.hero h1 {
+		font-size: 28px;
+	}
+
+	.hero p {
+		font-size: 12px;
+	}
+
+	.gallery h1 {
+		font-size: 18px;
+	}
+
+	.gallery p {
+		font-size: 12px;
+	}
+
+	.gallery h5 {
+		font-size: 16px;
+	}
+
+	.services .row:nth-child(1) h1 {
+		font-size: 18px;
+	}
+
+	.services .row:nth-child(1) p {
+		font-size: 12px;
+	}
+
+	.services .row:nth-child(2) h5 {
+		font-size: 13px;
+	}
+
+	.services .row:nth-child(2) p {
+		font-size: 10px;
+	}
+
+	.faq .row:nth-child(1) h2 {
+		font-size: 17px;
+	}
+
+	.faq .row:nth-child(1) p {
+		font-size: 12px;
+	}
+
+	.footer .row:nth-child(2) {
+		padding-top: 20px;
+	}
+
+	.footer .row:nth-child(1) h3 {
+		font-size: 20px;
+	}
+
+	.footer .row:nth-child(2) p {
+		font-size: 10px;
+	}
+}
